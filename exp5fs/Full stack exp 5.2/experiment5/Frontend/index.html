@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5.2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <aside class="side">
+            <div class="brand">
+                <span class="dot"></span>
+                <div>
+                    <h1>Experiment 5.2</h1>
+                    <p>Exceptions · Logging</p>
+                </div>
+            </div>
+
+            <form id="userForm" class="panel">
+                <h2>User Management</h2>
+                <label for="uid">UID</label>
+                <input type="text" id="uid" autocomplete="off">
+                <label for="name">Name</label>
+                <input type="text" id="name" autocomplete="off">
+                <div class="btns">
+                    <button type="submit" id="addBtn" class="mint">Add User</button>
+                    <button type="button" id="updateBtn" class="blue">Update User</button>
+                    <button type="button" id="clearBtn" class="ghost">Clear</button>
+                </div>
+            </form>
+
+            <div class="panel">
+                <h2>Search User</h2>
+                <div class="search-row">
+                    <input type="text" id="searchUid" autocomplete="off">
+                    <button type="button" id="searchBtn" class="teal">Search</button>
+                </div>
+                <div id="searchResult"></div>
+            </div>
+        </aside>
+
+        <section class="main">
+            <div class="top">
+                <h2>Users</h2>
+                <button type="button" id="refreshBtn" class="slate">Refresh Users</button>
+            </div>
+            <div class="grid" id="userTableBody"></div>
+            <p id="message"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

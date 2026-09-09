@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5.1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <aside class="side">
+            <div class="brand">
+                <span class="dot"></span>
+                <div>
+                    <h1>Experiment 5.1</h1>
+                    <p>REST API · Users</p>
+                </div>
+            </div>
+
+            <form id="userForm" class="panel">
+                <h2 id="formTitle">New record</h2>
+                <label for="uid">UID</label>
+                <input type="text" id="uid" placeholder="E20454" autocomplete="off" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Full name" autocomplete="off" required>
+                <div class="btns">
+                    <button type="submit" id="submitBtn">Save</button>
+                    <button type="button" id="cancelEditBtn" class="ghost hidden">Cancel</button>
+                </div>
+                <p id="message"></p>
+            </form>
+        </aside>
+
+        <section class="main">
+            <div class="top">
+                <h2>Directory</h2>
+                <button type="button" id="refreshBtn">Reload</button>
+            </div>
+            <div class="grid" id="userTableBody"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
